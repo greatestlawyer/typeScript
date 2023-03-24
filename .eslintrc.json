@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "env": {
+     "es6": true,
+     "es2017": true,
+     "browser": true,
+     "jest": true
+  },
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-underscore-dangle": "off",
+    "lines-between-class-members": "off",
+    "@typescript-eslint/lines-between-class-members": "off"
+  }
+}
